@@ -1,5 +1,10 @@
 package com.csap3.dhstravels.data;
 
+import android.content.Intent;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.csap3.dhstravels.Schedule;
 import com.csap3.dhstravels.data.model.LoggedInUser;
 
 import java.io.IOException;
@@ -21,6 +26,12 @@ public class LoginDataSource {
             }
     }
 
+    private class HomeActivity extends AppCompatActivity {
+        public void onClick() {
+            Intent i = new Intent(this, Schedule.class);
+            startActivity(i);
+        }
+    }
 
     public void logout() {
         // TODO: revoke authentication
