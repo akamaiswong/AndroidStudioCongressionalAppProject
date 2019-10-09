@@ -1,11 +1,14 @@
+/*
 package com.csap3.dhstravels.data;
 
 import com.csap3.dhstravels.data.model.LoggedInUser;
 
+*/
 /**
  * Class that requests authentication and user information from the remote data source and
  * maintains an in-memory cache of login status and user credentials information.
- */
+ *//*
+
 public class LoginRepository {
 
     private static volatile LoginRepository instance;
@@ -32,10 +35,13 @@ public class LoginRepository {
         return user != null;
     }
 
-    public void logout() {
+    //Removed the logout function in LoginDataSource.java, so need to comment the definition out here.
+    */
+/*public void logout() {
         user = null;
         dataSource.logout();
-    }
+    }*//*
+
 
     private void setLoggedInUser(LoggedInUser user) {
         this.user = user;
@@ -52,3 +58,4 @@ public class LoginRepository {
         return result;
     }
 }
+*/
