@@ -28,12 +28,8 @@ public class LoginDataSource {
 
     private class HomeActivity extends AppCompatActivity {
         public void onClick() {
-            Intent i = new Intent(this, Schedule.class);
+            Intent i = new Intent (this, Schedule.class);
             startActivity(i);
         }
-    }
-
-    public void logout() {
-        // TODO: revoke authentication
     }
 }
