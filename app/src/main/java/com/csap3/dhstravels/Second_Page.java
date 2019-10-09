@@ -9,6 +9,6 @@ public class Second_Page extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second__page);
+        setContentView(R.layout.activity_second_page);
     }
 }
