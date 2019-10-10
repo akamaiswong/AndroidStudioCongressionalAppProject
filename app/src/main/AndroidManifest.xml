@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Schedule" />
+        <activity android:name=".Assignment" />
+        <activity android:name=".NewDestination" />
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
