@@ -8,10 +8,12 @@ import android.view.View;
 import android.widget.Button;
 
 // @author :Donna Prince
+//@author : Yoga Kanneboina
 //Date : 10/10/2019
 
 public class NewDestination extends AppCompatActivity {
     private Button button2; //assign button2 to Button
+    private Button button3;//assign button2 to Button
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,15 @@ public class NewDestination extends AppCompatActivity {
         setContentView(R.layout.activity_new_destination);
         // switch view when button is clicked
         button2 = (Button) findViewById(R.id.donebtn);
+        // execute open_last_page() when button is clicked
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                open_last_page();
+            }
+        });
+
+        button3 = (Button) findViewById(R.id.search);
         // execute open_last_page() when button is clicked
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,7 +48,12 @@ public class NewDestination extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    public void open_search(){
+        // intent to switch from current layout to facts view
+        Intent intent = new Intent(this, FactsActivity.class);
+        // start activity to switch view
+        startActivity(intent);
+    }
 
 }
 
