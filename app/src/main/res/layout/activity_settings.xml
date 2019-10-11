@@ -1,0 +1,79 @@
+<!-- Setting Layout -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#a06094">
+
+    <FrameLayout
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <!-- Settings Title-->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="40dp"
+            android:text="Settings"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+    </FrameLayout>
+
+    <!-- Container for buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Change Font Button -->
+        <Button
+            android:id="@+id/Font"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:text="Change Font"
+            />
+
+        <!-- Change Color -->
+        <Button
+            android:id="@+id/Color"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:text="Change Color"
+            />
+
+        <!-- Change Name -->
+        <Button
+            android:id="@+id/ChangeName"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:text="Change Name"
+            />
+
+        <!-- Reset Password -->
+        <Button
+            android:id="@+id/ResetPass"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:text="Reset Password"
+            android:gravity="center"
+            />
+
+        <!-- Button to go to the Home screen;
+        when clicked, intents will be used to get to the home page -->
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_marginTop="175dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
