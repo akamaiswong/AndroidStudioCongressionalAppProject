@@ -7,12 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+//@author: Yoga Kanneboina and Akamai Wong
+//date: 10/11/19
+
+/*
+This class extends AppCompatActivity which makes it possible for us to use button functions
+and intents.
+*/
 public class Login extends AppCompatActivity {
 
-    private Button button;
+    private Button button; //the button variable allows us to assign the id to the button
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        /*
+        This method helps find the button and listens to when the button is clicked.
+         */
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login2);
 
@@ -20,6 +30,9 @@ public class Login extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                /*
+                This method calls the openSchedule Activity when the button is clicked.
+                 */
                 openScheduleActivity();
             }
         });
@@ -27,6 +40,11 @@ public class Login extends AppCompatActivity {
     }
 
     public void openScheduleActivity(){
+        /*
+        This method is to open the Activity with the schedule for the homework. It does this by
+        creating a new intent and passing in the parameter this, and Schedule class which tells the
+        app to switch the screen to Schedule.
+         */
         Intent intent = new Intent(this, Schedule.class);
         startActivity(intent);
     }
