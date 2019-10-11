@@ -48,7 +48,7 @@ public class Schedule extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                open_destination();
+                open_settings();
             }
         });
 
