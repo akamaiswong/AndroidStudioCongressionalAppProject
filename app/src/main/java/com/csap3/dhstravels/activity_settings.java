@@ -14,14 +14,22 @@ import androidx.preference.PreferenceFragmentCompat;
 //Date: 10/11/2019
 
 
+/*
+The public class activity_settings is a child of the class AppCompat Activity, which allows it to
+communicate with the other activities and launch the schedule activity from a button.
+*/
 public class activity_settings extends AppCompatActivity {
 
-    private Button button;
+    private Button button; //Declares the button so that it can be identified in later methods.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        /*
+        This method creates the activity, everything in this method will be called when the activity is launched.
+        This is essentially the set-up of the world, and identifies all of the interactive widgets used in the activity.
+         */
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.activity_settings); //Links the java page with the xml page
         button = (Button) findViewById(R.id.Home);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

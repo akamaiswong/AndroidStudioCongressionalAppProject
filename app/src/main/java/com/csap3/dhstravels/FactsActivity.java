@@ -13,17 +13,21 @@ import android.widget.Button;
 
 
 /*
-The public class Facts Activity is a child of the class AppCompat Activity, which allows it to
-communicate with the other activities and launch the schedule activity.
+The public class FactsActivity is a child of the class AppCompat Activity, which allows it to
+communicate with the other activities and launch the schedule activity from a button.
 */
 
 public class FactsActivity extends AppCompatActivity {
-    private Button button;
+    private Button button; //The button variable allows us to identify the button when setting up methods.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        /*
+        This method creates the activity, everything in this method will be called when the activity is launched.
+        This is essentially the set-up of the world, and identifies all of the interactive widgets used in the activity.
+         */
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_facts);
+        setContentView(R.layout.activity_facts); //Links the java page with the xml page
 
         button = (Button) findViewById(R.id.Home);
         button.setOnClickListener(new View.OnClickListener() {

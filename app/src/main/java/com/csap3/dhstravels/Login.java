@@ -23,10 +23,11 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         /*
-        This method helps find the button and listens to when the button is clicked.
+        This method creates the activity, everything in this method will be called when the activity is launched.
+        This is essentially the set-up of the world, and identifies all of the interactive widgets used in the activity.
          */
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login2);
+        setContentView(R.layout.activity_login2); //Links the java page to the xml page
 
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
