@@ -9,7 +9,8 @@ import android.widget.Button;
 
 // @author :Donna Prince
 //@author : Yoga Kanneboina
-//Date : 10/10/2019
+//@author: Akamai Wong
+//Date : 10/11/2019
 
 public class NewDestination extends AppCompatActivity {
     private Button button2; //assign button2 to Button
@@ -29,12 +30,14 @@ public class NewDestination extends AppCompatActivity {
             }
         });
 
-        button3 = (Button) findViewById(R.id.search);
+
+
+        button3 = (Button) findViewById(R.id.travel);
         // execute open_last_page() when button is clicked
-        button2.setOnClickListener(new View.OnClickListener() {
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                open_last_page();
+                open_search();
             }
         });
 

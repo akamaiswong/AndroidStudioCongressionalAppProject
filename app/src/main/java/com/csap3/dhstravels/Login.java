@@ -7,16 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-//@author: Yoga Kanneboina and Akamai Wong
+//@author: Akamai Wong
+//@author: Yoga Kanneboina
 //date: 10/11/19
 
 /*
 This class extends AppCompatActivity which makes it possible for us to use button functions
 and intents.
 */
+
 public class Login extends AppCompatActivity {
 
-    private Button button; //the button variable allows us to assign the id to the button
+    private Button button; //the button variable allows us to identify the button.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

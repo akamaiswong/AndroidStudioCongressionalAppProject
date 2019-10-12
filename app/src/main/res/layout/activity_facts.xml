@@ -18,19 +18,6 @@
         tools:ignore="NotSibling">
 
         <!-- Facts Title-->
-        <TextView
-            android:id="@+id/FactsTitle"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="41dp"
-            android:gravity="center"
-            android:text="Facts"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -49,23 +36,6 @@
 
         <!-- Show tip-->
 
-        <TextView
-            android:id="@+id/TipTitle"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="77dp"
-            android:layout_marginBottom="1dp"
-            android:gravity="center"
-            android:text="Tip:"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/Tip"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
-
 
         <!-- Button to go to the Home screen;
         when clicked, intents will be used to get to the home page -->
@@ -73,12 +43,14 @@
         <TextView
             android:id="@+id/Tip"
             android:layout_width="wrap_content"
-            android:layout_height="140dp"
+            android:layout_height="250dp"
             android:layout_marginTop="136dp"
+            android:layout_marginBottom="364dp"
             android:gravity="center"
-            android:text="Did you know that the Grand Canyon is 6000 (1800 metres) feet deep.The Colorado River runs through the Grand Canyon, it has been eroding its steep sides for millions of years. The different types of rock visible in the Grand Canyon make it an important site for geological research."
+            android:text="Did you know that the Grand Canyon is 6000 (1800 metres) feet deep? The Colorado River runs through the Grand Canyon, it has been eroding its steep sides for millions of years. The different types of rock visible in the Grand Canyon make it an important site for geological research."
             android:textSize="20sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -98,31 +70,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0">
 
-            <Button
-                android:id="@+id/Next"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="38dp"
-                android:gravity="center"
-                android:text="Next Tip"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/Back"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <Button
-                android:id="@+id/Back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="38dp"
-                android:gravity="center"
-                android:text="Previous Tip"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/Next"
-                app:layout_constraintTop_toTopOf="parent" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
@@ -138,6 +85,53 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/FactsTitle"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginEnd="175dp"
+            android:layout_marginBottom="644dp"
+            android:gravity="center"
+            android:text="Fact"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="474dp"
+            android:layout_marginEnd="257dp"
+            android:layout_marginBottom="228dp"
+            android:gravity="center"
+            android:text="Next Tip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="223dp"
+            android:layout_marginTop="472dp"
+            android:layout_marginEnd="73dp"
+            android:layout_marginBottom="230dp"
+            android:gravity="center"
+            android:text="Previous Tip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

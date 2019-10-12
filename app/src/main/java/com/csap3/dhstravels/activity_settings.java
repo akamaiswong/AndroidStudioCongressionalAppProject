@@ -9,6 +9,11 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceFragmentCompat;
 
+//@author: Akamai Wong
+//@author: Jasleen Kaur
+//Date: 10/11/2019
+
+
 public class activity_settings extends AppCompatActivity {
 
     private Button button;
