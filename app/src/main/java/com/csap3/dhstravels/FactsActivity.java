@@ -8,17 +8,17 @@ import android.view.View;
 import android.widget.Button;
 
 //@author: Akamai Wong
-//@author: Yoga Kanneboina
-//date: 10/11/19
+//@author: Jasleen Kaur
+//Date: 10/11/2019
+
 
 /*
-This class extends AppCompatActivity which makes it possible for us to use button functions
-and intents.
+The public class FactsActivity is a child of the class AppCompat Activity, which allows it to
+communicate with the other activities and launch the schedule activity from a button.
 */
 
-public class Login extends AppCompatActivity {
-
-    private Button button; //the button variable allows us to identify the button.
+public class FactsActivity extends AppCompatActivity {
+    private Button button; //The button variable allows us to identify the button when setting up methods.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +27,9 @@ public class Login extends AppCompatActivity {
         This is essentially the set-up of the world, and identifies all of the interactive widgets used in the activity.
          */
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login2); //Links the java page to the xml page
+        setContentView(R.layout.activity_facts); //Links the java page with the xml page
 
-        button = (Button) findViewById(R.id.button);
+        button = (Button) findViewById(R.id.Home);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,10 +39,10 @@ public class Login extends AppCompatActivity {
                 openScheduleActivity();
             }
         });
-
     }
 
-    public void openScheduleActivity(){
+
+    public void openScheduleActivity() {
         /*
         This method is to open the Activity with the schedule for the homework. It does this by
         creating a new intent and passing in the parameter this, and Schedule class which tells the
